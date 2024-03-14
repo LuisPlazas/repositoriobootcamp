@@ -1,0 +1,23 @@
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 30px;
+    background-color: #dbd7d7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.columna1{
+align-content: center;
+margin-top: 10%;
+padding: 10%;
+}
+.columna2{
+width: 50%;
+height: 50%;
+border: 5px solid #fff;
+background-color: #fff;
+border-radius: 15px;
+margin-top: 30%;
+}
+.boton1{
+    background-color: #3011df;
+}
