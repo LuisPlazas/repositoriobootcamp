@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .grid1{
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -11,13 +14,70 @@ margin-top: 10%;
 padding: 10%;
 }
 .columna2{
-width: 50%;
-height: 50%;
-border: 5px solid #fff;
+width: 350px;
+height: 350px;
+border: 5px solid #f0eff1;
 background-color: #fff;
-border-radius: 15px;
-margin-top: 30%;
+border-radius: 20px;
+margin-top: 20%;
+padding: 30px;
+align-content: center;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border:2px solid #4937ec;
+    border-radius: 5px;
+}
+.correo{
+    height: 100%;
+    margin-top: 5%;
+    padding: 6px;
+}
+.clave{
+    height: 100%;
+    margin-top: 5%;
+    padding: 6px;
 }
 .boton1{
     background-color: #3011df;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-top: 5%;
+    padding: 6px;
+    border-radius: 10px;
 }
+.texto1{
+    display: flex;
+    justify-content: center;
+}
+
+.tex1{
+    font-family: Arial, Helvetica, sans-serif;  
+    margin-top: 5%;
+    padding: 6px;
+}
+.linea,.linea2{
+    width: 100%;
+    border: 1px solid #999696;
+}
+.boton2{
+    background-color: #00e239;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-top: 5%;
+    padding: 6px;
+    border-radius: 10px;
+}
+.pie1,.pie2{
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+}
+li{
+    padding: 5px;
+    }
