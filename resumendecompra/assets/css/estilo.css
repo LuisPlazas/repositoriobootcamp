@@ -1,0 +1,31 @@
+.imagen-fondo{
+    background-image: url(../imagenes/banner.webp);
+}
+.linea{
+    width: 100%;
+    height: 2px;
+    background-color:#cac0c0;
+}
+.pos{
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+}
+.bor{
+    border-radius: 50%;
+}
+.back{
+    background-color: transparent;
+}
+.bor1{
+    background-color: #f01f1f;
+    border-radius: 2px;
+}
+.back1{
+    background-color: #b931ae;
+    border-radius: 2px;
+}
+.equis{
+    left: 96%;
+    width: fit-content;
+}
