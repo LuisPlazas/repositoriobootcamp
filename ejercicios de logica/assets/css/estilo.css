@@ -1,0 +1,11 @@
+body{
+    margin-top: 2px;
+    padding: 2%;
+    background-color: #49aabb;
+}
+.bor{
+    border-radius: 10px;
+}
+.bordes{
+    border: 1px solid #ffff;
+}

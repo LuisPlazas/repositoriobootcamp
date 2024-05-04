@@ -9,44 +9,110 @@
     <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
-<header >
-    <h1>Ejercicios De Logica</h1>
+<header class=" m-3 justify-content-center align-content-center p-lg-3 d-flex" >
+    <h1 >Ejercicios De Logica</h1>
 </header>
-<form id="Ejercicio1">
+<form  class="d-flex p-lg-2 m-lg-2 bordes" id="Ejercicio1">
     <h2>Ejercicio1</h2>
-    <input type="number"id="num">
-    <button type="submit">resultado</button>
-    <div id="resultado1"></div>
+    <input class="m-lg-3 bor" type="number"id="num">
+    <button   class="m-lg-3 bor"type="submit">resultado</button>
+    <div  class="m-lg-3 fs-4 text-white" id="resultado1"></div>
 </form>
-<form id="Ejercicio2">
+<form  class="d-flex p-lg-2 m-lg-2 bordes" id="Ejercicio2">
     <h2>Ejercicio2</h2>
-    <input type="number"id="nume">
-    <button type="submit">resultado</button>
-    <div id="resultado2"></div>
+    <input  class="m-lg-3 bor"type="number"id="nume">
+    <button class="m-lg-3 bor" type="submit">resultado</button>
+    <div class="m-lg-3 fs-4 text-white" id="resultado2"></div>
 </form>
 
-<form id="Ejercicio3">
+<form class="d-flex p-lg-2 m-lg-2 bordes" id="Ejercicio3">
     <h2>Ejercicio3</h2>
-    <input type="number"id="numo1">
-    <button id="nino">menor</button>
+    <label class="m-lg-3 fs-5" for="mujer">Mujer</label>
+    <input class="m-lg-3" type="radio"id="genero" name="genero" class="selectgene"value="mujer">
+    <label class="m-lg-3 fs-5" for="hombre">Hombre</label>
+    <input class="m-lg-3" type="radio"id="genero" name="genero" class="selectgene"value="hombre">
+    <input  class="m-lg-3 bor" type="number"id="numer">
+    <button class=" m-lg-3 bor" type="submit">reclama</button>
 
-    <input type="number"id="numo2">
-    <button id="may">mayor</button>
-
-    <input type="text"id="numo3">
-    <button id="gen">genero</button>
-
-    <div id="resultado3"></div>
+    <div class="fs-5 text-white" id="resultado3"></div>
 </form>
-<div>
-    <button>ejercicio 4</button>
-</div>
-<div>
-    <button>ejercicio 5</button>
-</div>
+
+<form class="p-lg-2 m-lg-2 bordes" id="Ejercicio4">
+    <h2>Ejercicio4</h2>
+                <table class="fs-4 justify-content-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >1</td>
+                            <td>hamburguesa</td>
+                            <td>15000</td>
+                        </tr>
+                        <tr>
+                            <td >2</td>
+                            <td>perro caliente</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>empanada</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>gaseosa</td>
+                            <td>1000</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>limonada</td>
+                            <td>2500</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input class="bor" type="text" id="pedido" placeholder="eliga su comida de prferencia">
+                <button class="bor" type="submit" id="pagar">pagar</button>
+                <div>
+                    <ul id="listaPedido"></ul>
+                </div>
+                <div class="m-lg-3 fs-5 text-white" id="resultado4"></div>
+            </form>
+<form class="d-flex p-lg-2 m-lg-2 bordes" id="Ejercicio5">
+    <h2>Ejercicio5</h2>
+    <label  class="m-lg-3 fs-5" for="num">Ingrese el numero a multiplicar</label>
+    <input class="m-lg-3 bor" type="number" id="numero">
+    <button  class="m-lg-3 bor"type="submit" id="mul">multiplicacion</button>
+    <div class="m-lg-3 fs-5 text-white" id="resultado5"></div>
+</form>
+
+<form class="d-flex p-lg-2 m-lg-2 bordes" id="Ejercicio6">
+    <h2>Ejercicio6</h2>
+    <label  class="m-lg-3 fs-5" for="matricula">matricula</label>
+    <input  class="m-lg-3 bor" type="number"id="matri" name="mat" class="valormatricula"value="matricula">
+    <label  class="m-lg-3 fs-5" for="promedio">promedio</label>
+    <input  class="m-lg-3 bor" type="text"id="prome" name="pro" class="promediopago"value="promedio">
+    <button class=" m-lg-3 bor" type="submit">pagar</button>
+
+    <div class="m-lg-3 fs-4 text-white" id="resultado6"></div>
+</form>
+
+<form  class="d-flex p-lg-2 m-lg-2 bordes" id="formulario">
+    <h2>Ejercicio7</h2>
+    <input class="m-lg-3" type="text" id="elemento" placeholder="valor nuevo">
+    <input class="m-lg-3" type="text" id="posicion" placeholder="desde posicion">
+    <button class=" m-lg-3 bor" type="submit">Guardar</button>
+</form>
+<div class="m-lg-3 fs-4 text-white" id="Lista_elementos"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="assets/js/code.js"></script>
+<script src="assets/js/ejercicio4.js"></script>
+<script src="assets/js/ejercicio7.js"></script>
 </body>
 </html>
