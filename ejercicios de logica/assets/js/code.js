@@ -31,22 +31,19 @@ let gen=evento.target.genero.value
 
     if(gen =="mujer" && nume<=10 ){
     document.querySelector("#resultado3").innerHTML="si puede reclamar un jugo y una pizza Hawaiana"
-    }else if( gen =="mujer"&& nume>10 && nume<17){
+    }else if( gen =="mujer"&& nume>10 && nume<=17){
         document.querySelector("#resultado3").innerHTML="si puede reclamar una pizza Hawaiana"
     }else if(gen =="mujer" && nume>=18){
         document.querySelector("#resultado3").innerHTML="si puede reclamar una cerveza y una pizza Hawaiana"
     }else if (gen=="hombre"&& nume<=10){
         document.querySelector("#resultado3").innerHTML="si puede reclamar un jugo y una pizza tres carnes"
-    }else if(gen =="hombre"&& nume>10 && nume<17){
+    }else if(gen =="hombre"&& nume>10 && nume<=17){
         document.querySelector("#resultado3").innerHTML="si puede reclamar una pizza tres carnes"
     }else if(gen =="hombre" && nume>=18)
     document.querySelector("#resultado3").innerHTML="si puede reclamar una cerveza y una pizza tres carnes"
 })
 
-//ejercicio4
 
-
-    
 
 //ejercicio5
 let form5=document.querySelector("#Ejercicio5")
@@ -55,9 +52,10 @@ form5.addEventListener(`submit`,function(evento){
     let mul=document.querySelector("#mul")
     let num=document.querySelector("#numero").value
     let res=document.querySelector("#resultado5")
-    for(let z=1; z<=num; z++){
-        m=num*z
-        res.innerHTML+=num+ "*"+ z +"=" + " " + m +"<br>"
+    let x=document.querySelector("#ingresar").value
+    for( let z=1; z<=num; z++){
+        m=x*z
+        res.innerHTML+=x+ "*"+ z +"=" + " " + m +"<br>"
     }
 })
 
@@ -65,7 +63,7 @@ form5.addEventListener(`submit`,function(evento){
 let form6=document.querySelector("#Ejercicio6")
 form6.addEventListener(`submit`,function(evento){
     evento.preventDefault()
-    let mat=evento.target.matri.value
+    let mat=1000000
     let pro=evento.target.prome.value
     let total
     if(mat==1000000 && pro<3){
@@ -76,8 +74,6 @@ form6.addEventListener(`submit`,function(evento){
     }else if(mat==1000000 && pro>=4 && pro<=5){
         total=(1000000*50)/100
         document.querySelector("#resultado6").innerHTML=`su descuento es ${total} debe pagar solo ${total}`
-    }else if (mat!=1000000){
-        document.querySelector("#resultado6").innerHTML=`el valor de la matricula es ${mat} no cuenta con descuento`
     }
 })
 
