@@ -3,12 +3,8 @@ let contenedorBotones = document.querySelector(`#contenedorBotones`)
 let btnP = document.querySelector(`#btnPrev`)
 let btnN = document.querySelector(`#btnNext`)
 
-
 btnP.setAttribute(`data-paginaAnterior`,null)
 btnN.setAttribute(`data-paginaSiguiente`,`https://pokeapi.co/api/v2/pokemon?offset=20&limit=20`)
-
-btnP.setAttribute("data-paginaAnterior",infoPokemon.previous)
-btnN.setAttribute("data-paginaSiguiente",infoPokemon.next)
 
 btnP.addEventListener("click",(e)=>{
     url_api = e.target.getAtribute("data-paginaAnterior")
@@ -28,6 +24,11 @@ btnN.addEventListener("click",(e)=>{
 
 async function obtenerPokemones(url_api = 'https://pokeapi.co/api/v2/pokemon') {
 divGrillaPagina.innerHTML = ""
+
+let dataAPI = await fetch(url_api)
+let infoPokemon = await dataAPI.json()
+let arrPokemones = infoPokemon.results
+
 
 
 
@@ -99,7 +100,8 @@ divGrillaPagina.innerHTML = ""
         `
     }
 
-
+    btnP.setAttribute("data-paginaAnterior",infoPokemon.previous)
+    btnN.setAttribute("data-paginaSiguiente",infoPokemon.next)
 }
 
 
