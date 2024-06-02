@@ -10,11 +10,23 @@
 </head>
 
 <body>
+    <header>
+        <section class="containerh py-5 ">
+            <div class=" mt-5 py-5 text-center text-white fw-bold">
+                <h1>Pokedex</h1>
+            </div>
+            <section class="py-3 d-flex justify-content-center align-content-center">
+                <input type="text" placeholder="Buscar pokemon" class="Bor" id="Nbuscador"> 
+                <button class="Bor btn btn-warning" id="Bbuscador">Buscar</button>
+                <button class="Bor btn btn-dark " id="IPokemon">Inicio</button>
+            </section>
+        </section>
+    </header>
     <section class="container py-5">
         <div class="row row-cols-1 row-cols-md-4 g-4" id="grilla-personajes"></div>
         <section class="py-5 d-flex justify-content-between" id="contenedorBotones">
-            <button id="btnPrev" class="btn btn-dark">Anterior</button>
-            <button id="btnNext" class="btn btn-dark">Siguiente</button>
+            <button id="btnPrev" class="btn btn-dark Bor ">Anterior</button>
+            <button id="btnNext" class="btn btn-dark Bor ">Siguiente</button>
         </section>
     </section>
 

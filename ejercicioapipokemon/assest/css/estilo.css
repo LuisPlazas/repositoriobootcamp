@@ -1,0 +1,12 @@
+header{
+    font-style: oblique;
+    font-family:monospace ;
+    background: radial-gradient(#3851c2,#29ec6a);
+}
+body{
+    background: radial-gradient(#c23d38,#d3d617);
+}
+.Bor{
+    border: 2%;
+    border-radius: 5px;
+}
